@@ -1,0 +1,75 @@
+Webapps 
+----
+  1. Server Side Rendering Apps (SSR) / Traditional Webapps 
+      * pages will refresh 
+
+      Codebase 
+      ----
+        Front End (HTML, CSS, JS) + Back End (Java/PHP/etc) + DB Queries 
+
+      Deployment 
+      ----
+        1 Server -- port 8080 
+        
+        http://localhost:8080
+
+      Response: 
+      ------
+        HTML, CSS, JS + Data 
+
+      Disadv 
+      ----
+        1. Slower Apps 
+        2. One server has to do the heavy-lifting 
+        3. UX was bad 
+        4. bandwidth consumption was more 
+        5. expensive
+
+  2. Client Side Rendering Apps (CSR) / Modern Webapps = SPA + REST API 
+      * Pages will NOT Refresh 
+
+      Codebase 
+      ----
+        Front End App:  HTML, CSS, JS
+        Back End App: Java/PHP/.... + DB Queries 
+
+      Deployment 
+      -----
+        2 Servers 
+          1 For Front End App a.k.a Single Page App (SPA)  -- port 3000
+          Response: HTML, CSS, JS 
+
+          1 For Back End App a.k.a RESTful API (Rest API)  -- port 8080
+          Response: Data (JSON) 
+
+      Advantages 
+      ----
+        1. Faster Apps 
+        2. Two servers are sharing the workload
+        3. UX has become good
+        4. bandwidth consumption was less 
+        5. less expensive
+
+
+--------
+Single Page Apps (SPA)
+----
+  Characteristics of SPA
+    1. Page should NOT Refresh 
+    2. URL should change 
+    3. History should be maintained w/o page refresh 
+    4. Header and Footer should not be loaded again and again 
+    5. In Between Header and Footer -- show the contextual updates 
+    6. Active Menu should be set 
+    7. Page Title should be changed 
+
+  Frameworks / Libraries
+  ---------
+    #1. React JS (library)
+    #2. Angular 2+ (framework)
+    #3. Vue JS (framework)
+=================
+
+Create a TS based Project?
+  npx create-react-app netflix-plus-bosch-nov2023 --template typescript
+
