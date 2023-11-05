@@ -73,3 +73,89 @@ Single Page Apps (SPA)
 Create a TS based Project?
   npx create-react-app netflix-plus-bosch-nov2023 --template typescript
 
+=====
+Component
+-----------
+  Thinking in React 
+    Step 0: Identify the number of components 
+    Step 1: Break the UI into a component hierarchy 
+
+  Types of Components 
+  ------
+    1. Functional Components
+        * were called as Stateless Components. But no longer.
+        * were called as Presentational components / Dumb Components.  But no longer
+
+        1.1. Functional Components with Named Fn [DONE]
+        1.2. Functional Components with Anonymous Fn [DONE]
+        1.3. Functional Components with Arrow Fn [DONE] (RECOMMENDED)
+
+    2. Class Components (About to be Deprecated in v19 or v20)
+        * were called as Stateful Components. But no longer.
+        * were called as Containers components / Smart Components.  But no longer
+
+
+
+
+Project Structure
+-----------------
+  src/
+    components/
+
+
+
+
+Naming Conventions & Casing 
+----
+  Casing Types 
+  --------
+    1. PascalCase 
+        * Recommended for Object Oriented Program's classes 
+        * also Recommended for Interface in TypeScript 
+        * Recommended for React Components and the folder of Components
+
+        examples 
+        ---
+          class CarDetails {
+
+          }
+
+          interface Employee {
+
+          }
+
+    2. camelCase 
+        * Recommended for variables, const, functions, methods in JS & TS 
+        * Recommended for id's of html elements 
+        * Recommended for variables, const, fn, methods, event handlers of React Component
+        
+        examples 
+        -----
+          var myCar = 'BMW';
+          var isLoggedIn = true;
+
+          function getCarInfo() {
+            //....
+          }
+    
+    3. kebab-case
+        * Recommended for URLs 
+        * Recommended for file names, folder names, assets in front end projects  
+        * Recommended for css classes 
+        * okay for id's of html elements if your architect says ok
+
+        examples 
+        -----
+          btn-primary
+          slideshow-container 
+          youtube-logo.png 
+
+    4. snake_case 
+        * never ever use this. 
+        * okay for const in JS & TS if architect accepts
+
+        examples
+        ---
+          const MAX_STUDENTS_PER_CLASS = 30;
+
+----------------
