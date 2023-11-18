@@ -168,8 +168,8 @@ Naming Conventions & Casing
 
 Core Concepts in React JS 
 -----------------------
-  1. Props
-  2. States 
+  1. Props [DONE]
+  2. States [DONE]
   3. Events 
   4. Lists & Keys 
   5. Conditional Rendering
@@ -224,3 +224,4 @@ Cross Component Communication
   2. Child to Parent Component Communication
   3. Any to Any Component Communication
 
+=====

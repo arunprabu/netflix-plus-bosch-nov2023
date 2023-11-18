@@ -1,4 +1,5 @@
 import LatestShow from "../components/LatestShow";
+import TrendingShowList from "../components/TrendingShowList";
 
 const NetflixPage: React.FC = () => {
   return (
@@ -30,12 +31,13 @@ const NetflixPage: React.FC = () => {
       </div>
 
       <hr />
-      <h2>Recommended Shows | States and Events Demo</h2>
+      <h2>Trending Shows | States and Events Demo</h2>
+      <TrendingShowList />
 
       <hr />
       <h2>
-        Trending Shows | States, Events, Conditional Rendering, Lists and Keys
-        Demo
+        Recommended Shows | States, Events, Conditional Rendering, Lists and
+        Keys Demo
       </h2>
 
       <hr />
