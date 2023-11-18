@@ -170,9 +170,9 @@ Core Concepts in React JS
 -----------------------
   1. Props [DONE]
   2. States [DONE]
-  3. Events 
-  4. Lists & Keys 
-  5. Conditional Rendering
+  3. Events [DONE]
+  4. Lists & Keys [DONE]
+  5. Conditional Rendering [DONE]
   6. Styling 
 
 Limitations of ReactJS 
