@@ -1,1 +1,0 @@
-1. Learn about integrating bootstrap css and js in CRA app 

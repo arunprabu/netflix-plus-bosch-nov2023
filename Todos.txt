@@ -1,0 +1,4 @@
+1. Learn about integrating bootstrap css and js in CRA app 
+2. Active Menu should be set when we click on the Menu items in react.
+3. Page Title should be changed when we click on the links
+    Refer: react-helmet-async 

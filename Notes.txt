@@ -55,13 +55,13 @@ Webapps
 Single Page Apps (SPA)
 ----
   Characteristics of SPA
-    1. Page should NOT Refresh 
-    2. URL should change 
-    3. History should be maintained w/o page refresh 
-    4. Header and Footer should not be loaded again and again 
-    5. In Between Header and Footer -- show the contextual updates 
-    6. Active Menu should be set 
-    7. Page Title should be changed 
+    1. Page should NOT Refresh [DONE]
+    2. URL should change [DONE]
+    3. History should be maintained w/o page refresh [DONE]
+    4. Header and Footer should not be loaded again and again [DONE]
+    5. In Between Header and Footer -- show the contextual updates [DONE]
+    6. Active Menu should be set [TODO]
+    7. Page Title should be changed [TODO]
 
   Frameworks / Libraries
   ---------
@@ -95,15 +95,20 @@ Component
         * were called as Containers components / Smart Components.  But no longer
 
 
-
-
 Project Structure
 -----------------
   src/
     components/
+      MenuList.tsx
+    layouts/
+      Header.tsx 
+      Footer.tsx 
+    pages/
 
-
-
+    
+    
+    
+    
 
 Naming Conventions & Casing 
 ----
@@ -159,3 +164,63 @@ Naming Conventions & Casing
           const MAX_STUDENTS_PER_CLASS = 30;
 
 ----------------
+
+
+Core Concepts in React JS 
+-----------------------
+  1. Props
+  2. States 
+  3. Events 
+  4. Lists & Keys 
+  5. Conditional Rendering
+  6. Styling 
+
+Limitations of ReactJS 
+-----
+  1. Doesn't have tools to help make SPA 
+  2. Doesn't have any tool to help connect to REST API 
+  3. Doesn't offer any form and form validation related tools
+  4. Most of the other things you need to look for open source tools
+
+
+Developing SPA in React JS 
+============
+  Step 0: Identifying the URLs for Menus and matching components 
+    Home              - /            -- Home Component 
+    Netflix App       - /netflix     -- Netflix Component 
+    User Management   - /users       -- Users Component 
+    Timeline          - /timeline    -- Timeline Component 
+    Products          - /products    -- Products Component 
+    Tree View         - /tree-view   -- TreeView Component 
+    About             - /about       -- About Component 
+    Contact Us        - /contact-us  -- ContactUs Component 
+    Spotify App       - /spotify     -- Spotify Component (You can find steps in E-Book)
+
+  Step 1: Let's setup the URLs in MenuList component 
+  
+  Step 2: Let's create the necessary components
+
+  Step 3: Let's integrate react-router-dom in our React App to implement routing
+          npm i react-router-dom 
+
+  Step 4: Let's move the entire app under BrowserRouter in App.tsx 
+          Now, Let's setup the routing configuration in App.tsx
+
+  Step 5: Check the app. Page will still refresh. Let's fix it. 
+          In MenuList.tsx, replace a href with <Link to=''> from react-router-dom 
+
+  
+=========
+
+Working with variables in React
+----
+  Refer: Footer.tsx 
+
+Cross Component Communication
+----------------------------
+  1. Parent to Child Component Communication [DONE]
+      Using Props 
+
+  2. Child to Parent Component Communication
+  3. Any to Any Component Communication
+

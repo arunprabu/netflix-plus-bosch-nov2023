@@ -1,47 +1,54 @@
+import { Link } from "react-router-dom";
+
 // Functional Component with Arrow Fn 
 const MenuList: React.FC = () => {
   // must return JSX
   return (
     <ul className="navbar-nav me-auto mb-2 mb-md-0">
       <li className="nav-item">
-        <a className="nav-link active" aria-current="page" href="#">
+        <Link className="nav-link active" aria-current="page" to="/">
           Home
-        </a>
+        </Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">
+        <Link className="nav-link" to="/netflix">
           Netflix App
-        </a>
+        </Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">
+        <Link className="nav-link" to="/users">
           User Management App
-        </a>
+        </Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">
+        <Link className="nav-link" to="/timeline">
           Timeline
-        </a>
+        </Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">
+        <Link className="nav-link" to="/products">
           Products
-        </a>
+        </Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">
+        <Link className="nav-link" to="/tree-view">
           Tree View
-        </a>
+        </Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">
+        <Link className="nav-link" to="/about">
           About
-        </a>
+        </Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">
+        <Link className="nav-link" to="/contact-us">
           Contact Us
-        </a>
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link className="nav-link" to="/spotify">
+          Spotify App
+        </Link>
       </li>
     </ul>
   );
