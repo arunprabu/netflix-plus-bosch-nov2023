@@ -177,8 +177,8 @@ Core Concepts in React JS
 
 Limitations of ReactJS 
 -----
-  1. Doesn't have tools to help make SPA 
-  2. Doesn't have any tool to help connect to REST API 
+  1. Doesn't have tools to help make SPA. Use react-router-dom 
+  2. Doesn't have any tool to help connect to REST API. use axios or else fetch (native js) 
   3. Doesn't offer any form and form validation related tools
   4. Most of the other things you need to look for open source tools
 

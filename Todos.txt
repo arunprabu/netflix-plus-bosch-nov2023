@@ -7,7 +7,12 @@
 5. Learn about setting up prettier in create-react-app based project.
     One Ref: https://andrebnassis.medium.com/setting-prettier-on-a-react-typescript-project-2021-f9f0d5a1d6b0
 6. Learn about styled-components and implement it in ContactUsPage.tsx 
-
+7. replace bootstrap alert success/alert danger with react-toastify or react-hot-toast
+8. disable the submit button in AddUser component after clicking till you get either success or error in api call 
+9. change the submit button's label to Submitting... after clicking 
+10. Implement validations in AddUser for all fields such as required for all fields, 
+    pattern for email, max length for phone
+11. Handle error in UserDetails component and display it in toast.
 
 
 

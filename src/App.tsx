@@ -28,7 +28,7 @@ const App: React.FC = () => {
           <Route path="/netflix" element={<NetflixPage />} />
           <Route path="/users" element={<UsersPage />} />
           <Route path="/users/add" element={<AddUser />} />
-          <Route path="/users/1" element={<UserDetails />} />
+          <Route path="/users/:id" element={<UserDetails />} />
           <Route path="/timeline" element={<TimelinePage />} />
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/tree-view" element={<TreeViewPage />} />
