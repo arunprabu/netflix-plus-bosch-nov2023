@@ -58,7 +58,7 @@ const RecommendedShowList: React.FC = () => {
     // Duplicating shows array from state
     const duplicateShows = [...shows];
     duplicateShows[index].isInWatchlist = !duplicateShows[index].isInWatchlist;
-    
+
     setShows(duplicateShows);
   };
 
@@ -86,8 +86,8 @@ const RecommendedShowList: React.FC = () => {
                   <li className="list-group-item">
                     <button
                       className="btn btn-success btn-sm"
-                      onClick={ () => {
-                        handleManageWatchlist(index)
+                      onClick={() => {
+                        handleManageWatchlist(index);
                       }}
                     >
                       {/* Conditional Rendering in JSX */}

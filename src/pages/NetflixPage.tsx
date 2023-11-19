@@ -1,5 +1,6 @@
 import LatestShow from "../components/LatestShow";
 import RecommendedShowList from "../components/RecommendedShowList";
+import Subscription from "../components/Subscription";
 import TrendingShowList from "../components/TrendingShowList";
 
 const NetflixPage: React.FC = () => {
@@ -44,6 +45,7 @@ const NetflixPage: React.FC = () => {
 
       <hr />
       <h2>Subscription | Styling Demo</h2>
+      <Subscription />
     </div>
   );
 };

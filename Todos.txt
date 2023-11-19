@@ -1,4 +1,52 @@
 1. Learn about integrating bootstrap css and js in CRA app 
+
 2. Active Menu should be set when we click on the Menu items in react.
 3. Page Title should be changed when we click on the links
     Refer: react-helmet-async 
+4. Learn about setting up ESLint in create-react-app based project.
+5. Learn about setting up prettier in create-react-app based project.
+    One Ref: https://andrebnassis.medium.com/setting-prettier-on-a-react-typescript-project-2021-f9f0d5a1d6b0
+6. Learn about styled-components and implement it in ContactUsPage.tsx 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Names 
+
+Aswathanarayan Madesha
+Gajula Bharath Samrat
+
+Jain Vipul
+Kushal Kumar M
+Muthiah R M
+Parthasarathy Jayanthi
+
+Ramkumar Lakshmanan
+
+Ragavendar Swaminatha Subramanian
+Ravindran Vijayakumar
+Shetty Shraddha
+Das Ashish Kumar
+
+Anusha Bettaiah
+Arun Ponnusamy
+
+
+ 

@@ -1,6 +1,7 @@
 import React from 'react'; // official react core library
 import ReactDOM from 'react-dom/client'; // react-dom package -- for dom updates
-import './index.css';
+// integrate boostrap css 
+import './index.css'; // your own global styles -- override bootstrap styles here
 import App from './App'; // App component is imported
 import reportWebVitals from './reportWebVitals';
 

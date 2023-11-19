@@ -11,6 +11,8 @@ import TreeViewPage from "./pages/TreeViewPage";
 import AboutPage from "./pages/AboutPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import SpotifyPage from "./pages/SpotifyPage";
+import AddUser from "./components/AddUser";
+import UserDetails from "./components/UserDetails";
 
 // Component will have TS, JSX and CSS
 const App: React.FC = () => {
@@ -25,6 +27,8 @@ const App: React.FC = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/netflix" element={<NetflixPage />} />
           <Route path="/users" element={<UsersPage />} />
+          <Route path="/users/add" element={<AddUser />} />
+          <Route path="/users/1" element={<UserDetails />} />
           <Route path="/timeline" element={<TimelinePage />} />
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/tree-view" element={<TreeViewPage />} />

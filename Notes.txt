@@ -173,7 +173,7 @@ Core Concepts in React JS
   3. Events [DONE]
   4. Lists & Keys [DONE]
   5. Conditional Rendering [DONE]
-  6. Styling 
+  6. Styling [DONE]
 
 Limitations of ReactJS 
 -----

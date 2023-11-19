@@ -19,7 +19,7 @@ const TrendingShowList = () => {
     * updateable data
   */
   const [resolution, setResolution] = useState<string>("HD");
-  const [shows, setShows] = useState<IVideo[]>([
+  const [shows] = useState<IVideo[]>([
     {
       id: 34567589,
       trendingRank: 1,

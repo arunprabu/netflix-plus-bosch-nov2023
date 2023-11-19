@@ -1,7 +1,13 @@
+import ThemeSwitcher from "../components/ThemeSwitcher";
+
 const ContactUsPage = () => {
   return (
-    <div>ContactUsPage</div>
-  )
+    <div>
+      <h1>Contact Us</h1>
+
+      <ThemeSwitcher />
+    </div>
+  );
 }
 
 export default ContactUsPage
