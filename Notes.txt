@@ -229,3 +229,20 @@ Cross Component Communication
       3.2 Using Redux 
 
 =====
+Saturday
+---
+  Case study #3 -- by 1pm 
+
+  Case study #4 -- by 3.30 pm
+
+  Todos App
+  Error Boundary 
+  HOC
+  Uncontrolled Components
+
+Sunday
+---
+  Authentication 
+  L10n, i18n 
+  Case Study #5 -- by 1pm 
+  Redux - Toolkit 
