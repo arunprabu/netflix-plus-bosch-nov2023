@@ -24,6 +24,7 @@ const Header: React.FC = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <MenuList />
+            <button className="btn btn-warning">Cart(0)</button>
           </div>
         </div>
       </nav>

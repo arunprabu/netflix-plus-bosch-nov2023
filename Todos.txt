@@ -13,6 +13,11 @@
 10. Implement validations in AddUser for all fields such as required for all fields, 
     pattern for email, max length for phone
 11. Handle error in UserDetails component and display it in toast.
+12. Complete Edit User in http://localhost:3000/users/1/edit 
+13. Delete the User http://localhost:3000/users/1/ and 
+    after deleting show the message for 3 seconds,
+    then redirect / navigate to users page using react-router-dom. 
+14. 
 
 
 

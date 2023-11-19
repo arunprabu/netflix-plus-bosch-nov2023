@@ -221,7 +221,11 @@ Cross Component Communication
   1. Parent to Child Component Communication [DONE]
       Using Props 
 
-  2. Child to Parent Component Communication
+  2. Child to Parent Component Communication [TODO]
+      Using Props, Event Handler fn passed to child component
+
   3. Any to Any Component Communication
+      3.1 Using React Context API 
+      3.2 Using Redux 
 
 =====
