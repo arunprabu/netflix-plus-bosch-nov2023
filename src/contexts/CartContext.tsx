@@ -19,7 +19,7 @@ interface CartContextProps {
   addToCart: (product: Product) => void; // Needed for ProductsPage comp
 }
 
-export const CartContext = createContext<CartContextProps | undefined>(
+const CartContext = createContext<CartContextProps | undefined>(
   undefined
 );
 

@@ -237,15 +237,28 @@ Localization (l10n)
 
 npm i i18next react-i18next i18next-browser-languagedetector
 
+Authentication
+-------
+  1. Session-Based Authentication
+  2. Token-Based Authentication (To learn)
+      * login using email and password (to learn)
+        * backend will return JSON Webtoken (JWT), if login is successful (to learn)
+          * token coming as response should be saved in browser (cookies/local storage/session storage) (to learn)
+          * for every subsequent request hitting rest api should carry the token (NOT THIS)
+          * implement logout (to learn)
+          
+        * backend will return error message, if login is NOT successful
+
+Authorization
+---------
+  
 
 
 
 Saturday
 ---
 
-  i18n & l10n (till 1pm)
-
-  Case study #4 -- by 2 to 4 pm (Authentication)
+  Case study #4 -- by 2.05 to 4 pm (Authentication)
 
   Case Study #5 -- tree view (4 to 4.45.pm)
   Error Boundary (5.00pm)
