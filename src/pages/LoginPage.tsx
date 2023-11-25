@@ -1,7 +1,7 @@
 import axios from "axios";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../contexts/AuthContext";
+import { UserRole, useAuth } from "../contexts/AuthContext";
 
 interface LoginForm {
   email: string;
@@ -12,7 +12,7 @@ const LoginPage = () => {
   const { register, handleSubmit, formState } = useForm<LoginForm>();
   const navigate = useNavigate();
 
-  const { saveAuthToken } = useAuth();
+  const { onLogin } = useAuth();
 
   const handleLogin: SubmitHandler<LoginForm> = async (data: LoginForm) => {
     console.log("will implement login in a while");
@@ -23,7 +23,7 @@ const LoginPage = () => {
       // assuming the login is successful
       console.log(response.data);
       // the token should be saved in local storage
-      saveAuthToken(response.data.token);
+      onLogin(response.data.token, UserRole.SuperAdmin);
       // redirect to the contact-us page -- static implementation
       navigate("/contact-us");
     } catch (err) {

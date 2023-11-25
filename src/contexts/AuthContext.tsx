@@ -4,10 +4,16 @@
 // 4. use the context in the needed comp 
 import { ReactNode, createContext, useContext, useState } from "react";
 
+export enum UserRole {
+  SuperAdmin = 'SUPER_ADMIN',
+  User = 'USER'
+}
+
 interface AuthContextProps {
   isAuthenticated: boolean; // needed for the entire app - particularly in ProtectedRoutes comp
-  saveAuthToken: (token: string) => void; // needed for LoginPage comp
-  logout: () => void; // needed for header comp
+  onLogin: (token: string, role: UserRole) => void; // needed for LoginPage comp
+  logout: () => void; // needed for header comp,
+  role: UserRole | null;
 }
 
 const AuthContext = createContext<AuthContextProps | undefined>(undefined);
@@ -24,11 +30,15 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({
     return !!authToken; // return true of false
   });
 
-  // save the token
-  const saveAuthToken = (token: string) => {
+  const [role, setRole] = useState<UserRole | null>(null);
+
+  // save the token and role
+  const onLogin = (token: string, role: UserRole) => {
     // storing the auth token in local storage
     localStorage.setItem("authToken", token);
+    localStorage.setItem("role", role);
     setIsAuthenticated(true);
+    setRole(role);
   };
 
   // logout
@@ -39,7 +49,9 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({
 
   return (
     // The following data will be shared across multiple components
-    <AuthContext.Provider value={{ isAuthenticated, saveAuthToken, logout }}>
+    <AuthContext.Provider
+      value={{ isAuthenticated, onLogin, logout, role }}
+    >
       {children}
     </AuthContext.Provider>
   );

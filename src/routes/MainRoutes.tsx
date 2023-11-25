@@ -12,6 +12,7 @@ import AddUser from "../components/AddUser";
 import UserDetails from "../components/UserDetails";
 import LoginPage from '../pages/LoginPage';
 import ProtectedRoutes from './ProtectedRoutes';
+import AdminPage from '../pages/AdminPage';
 
 const MainRoutes = () => {
   return (
@@ -28,6 +29,7 @@ const MainRoutes = () => {
 
       {/* The following routes are protected. You need to login to access them */}
       <Route element={<ProtectedRoutes />}>
+        <Route path="/admin" element={<AdminPage />} />
         <Route path="/tree-view" element={<TreeViewPage />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
         <Route path="/spotify" element={<SpotifyPage />} />
