@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 // Functional Component with Arrow Fn 
 const MenuList: React.FC = () => {
   // must return JSX
+  // keep an array for all these navigations 
+
   return (
     <ul className="navbar-nav me-auto mb-2 mb-md-0">
       <li className="nav-item">
-        <Link className="nav-link active" aria-current="page" to="/">
+        <Link className="nav-link" to="/">
           Home
         </Link>
       </li>

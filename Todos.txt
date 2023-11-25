@@ -1,4 +1,4 @@
-1. Learn about integrating bootstrap css and js in CRA app 
+1. Learn about integrating bootstrap css and js in CRA app [REVIEWED]
 
 2. Active Menu should be set when we click on the Menu items in react.
 3. Page Title should be changed when we click on the links
@@ -17,7 +17,10 @@
 13. Delete the User http://localhost:3000/users/1/ and 
     after deleting show the message for 3 seconds,
     then redirect / navigate to users page using react-router-dom. 
-14. 
+14. avoid code duplicate in MenuList.tsx by having an array of urls and menu items 
+15. Create RecommendedShow component and use it inside RecommendedShowList component. From the child comp execute 
+    handleManageWatchlist. 
+16. 
 
 
 

@@ -224,25 +224,41 @@ Cross Component Communication
   2. Child to Parent Component Communication [TODO]
       Using Props, Event Handler fn passed to child component
 
-  3. Any to Any Component Communication
-      3.1 Using React Context API 
-      3.2 Using Redux 
+  3. Any to Any Component Communication 
+      3.1 Using React Context API [DONE]
+      3.2 Using Redux / Redux-Toolkit / Flex / MobX / Zustand / Recoil / Jotai
 
 =====
+Internationalization (i18n)
+  * Making sure the app showing its content in multiple languages
+
+Localization (l10n)
+  * Ensuring your apps content is showing for specific regiion (locale-specific)
+
+npm i i18next react-i18next i18next-browser-languagedetector
+
+
+
+
 Saturday
 ---
-  Case study #3 -- by 1pm 
 
-  Case study #4 -- by 3.30 pm
+  i18n & l10n (till 1pm)
 
-  Todos App
-  Error Boundary 
-  HOC
-  Uncontrolled Components
+  Case study #4 -- by 2 to 4 pm (Authentication)
 
+  Case Study #5 -- tree view (4 to 4.45.pm)
+  Error Boundary (5.00pm)
+  HOC (5 to 5.45pm)
+  
 Sunday
 ---
-  Authentication 
-  L10n, i18n 
-  Case Study #5 -- by 1pm 
-  Redux - Toolkit 
+  Uncontrolled Components
+  TodoApp with useReducer
+  case study #6: timeline 
+  Hooks (useMemo, useCallback)
+  build and deployment 
+  lazy loading 
+
+  Redux - Toolkit (2 to 5.45pm)
+ 

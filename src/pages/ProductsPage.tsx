@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useCart } from "../contexts/CartContext";
 
 interface Product {
   id: number;
@@ -35,8 +36,13 @@ const ProductsPage = () => {
     },
   ]);
 
+  const context = useCart();
+
   const handleAddToCart = (product: Product) => {
     console.log(product);
+    // add the product into the backend rest api
+    // only if response is successful, you can update the context
+    context.addToCart(product);
   };
 
   return (

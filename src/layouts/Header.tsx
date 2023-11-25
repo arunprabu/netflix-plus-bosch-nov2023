@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import MenuList from "../components/MenuList";
+import { useCart } from "../contexts/CartContext";
 
 // comp defn
 const Header: React.FC = () => {
+  const context = useCart();
+  console.log(context);
+
   // must return JSX
   return (
     <header>
@@ -24,7 +28,9 @@ const Header: React.FC = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <MenuList />
-            <button className="btn btn-warning">Cart(0)</button>
+            <button className="btn btn-warning">
+              Cart({context?.cartItems.length})
+            </button>
           </div>
         </div>
       </nav>
