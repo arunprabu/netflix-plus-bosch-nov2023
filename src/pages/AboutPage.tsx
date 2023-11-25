@@ -1,6 +1,7 @@
-import Counter from "../components/Counter";
-import Localized from "../components/Localized";
 // npm i i18next react-i18next
+import Localized from "../components/Localized";
+import NewsMedia from "../components/NewsMedia";
+import SquareCalculator from "../components/SquareCalculator";
 
 const AboutPage: React.FC<any> = (props) => {
   return (
@@ -11,11 +12,15 @@ const AboutPage: React.FC<any> = (props) => {
       <h2>Demo of i18n and l10n</h2>
       <Localized />
 
-      <hr/>
+      <hr />
       <h2>useCallback Hook Demo</h2>
-      <Counter />
-    </div>
-  )
-}
+      <NewsMedia />
 
-export default AboutPage
+      <hr />
+      <h2>useMemo Hook Demo</h2>
+      <SquareCalculator />
+    </div>
+  );
+};
+
+export default AboutPage;

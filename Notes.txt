@@ -260,7 +260,7 @@ useCallback()
 
 Sunday
 ---
-  Case Study #5: tree view (4 to 4.45.pm)
+  Case Study #5: tree view
   case study #6: timeline 
 
   Uncontrolled Components
