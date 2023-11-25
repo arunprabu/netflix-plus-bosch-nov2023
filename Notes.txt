@@ -250,21 +250,24 @@ Authentication
         * backend will return error message, if login is NOT successful
 
 Authorization [DONE]
----------
-  
-Saturday
----
 
-  Case Study #5 -- tree view (4 to 4.45.pm)
-  Error Boundary (5.00pm)
-  HOC (5 to 5.45pm)
+useMemo()
+  memoizes the returned value
+
+useCallback() 
+  memoizes the entire fn 
   
+
 Sunday
 ---
-  Uncontrolled Components
-  TodoApp with useReducer
+  Case Study #5: tree view (4 to 4.45.pm)
   case study #6: timeline 
+
+  Uncontrolled Components
   Hooks (useMemo, useCallback)
+
+  TodoApp with useReducer (may not be possible)
+  HOC
   build and deployment 
   lazy loading 
 
