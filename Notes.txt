@@ -249,16 +249,11 @@ Authentication
           
         * backend will return error message, if login is NOT successful
 
-Authorization
+Authorization [DONE]
 ---------
   
-
-
-
 Saturday
 ---
-
-  Case study #4 -- by 2.05 to 4 pm (Authentication)
 
   Case Study #5 -- tree view (4 to 4.45.pm)
   Error Boundary (5.00pm)
