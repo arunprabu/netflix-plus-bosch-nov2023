@@ -13,7 +13,7 @@ interface AuthContextProps {
   isAuthenticated: boolean; // needed for the entire app - particularly in ProtectedRoutes comp
   onLogin: (token: string, role: UserRole) => void; // needed for LoginPage comp
   logout: () => void; // needed for header comp,
-  role: UserRole | null;
+  role: UserRole | undefined;
 }
 
 const AuthContext = createContext<AuthContextProps | undefined>(undefined);
@@ -30,7 +30,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({
     return !!authToken; // return true of false
   });
 
-  const [role, setRole] = useState<UserRole | null>(null);
+  const [role, setRole] = useState<UserRole | undefined>();
 
   // save the token and role
   const onLogin = (token: string, role: UserRole) => {

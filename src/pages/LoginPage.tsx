@@ -23,7 +23,7 @@ const LoginPage = () => {
       // assuming the login is successful
       console.log(response.data);
       // the token should be saved in local storage
-      onLogin(response.data.token, UserRole.SuperAdmin);
+      onLogin(response.data.token, UserRole.User);
       // redirect to the contact-us page -- static implementation
       navigate("/contact-us");
     } catch (err) {
