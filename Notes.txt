@@ -251,22 +251,24 @@ Authentication
 
 Authorization [DONE]
 
-useMemo()
-  memoizes the returned value
-
-useCallback() 
-  memoizes the entire fn 
-  
 
 Sunday
 ---
+  
+  Hooks (useMemo, useCallback)
+    useCallback() 
+      memoizes the entire fn 
+
+    useMemo()
+      memoizes the returned value
+
+
+
   Case Study #5: tree view
   case study #6: timeline 
 
-  Uncontrolled Components
-  Hooks (useMemo, useCallback)
 
-  TodoApp with useReducer (may not be possible)
+
   HOC
   build and deployment 
   lazy loading 

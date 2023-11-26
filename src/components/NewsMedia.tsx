@@ -10,7 +10,8 @@ especially when passing callbacks to child components that rely on reference equ
 */
 
 const NewsMedia = () => {
-  const [newsFeedCount, setNewsFeedCount] = useState(62);
+  console.log('Program Started');
+  const [newsFeedCount, setNewsFeedCount] = useState(45);
   const [writersCount, setWritersCount] = useState(4);
 
   // Without useCallback -- Child comp will re-render even when just count value changed.
@@ -42,7 +43,7 @@ const NewsMedia = () => {
   It logs the counts of both newsFeedCount and writersCount
   when the button in the ChildComponent is clicked. 
   The dependency array [newsFeedCount] ensures that the callback is 
-  RECREATED only when newsFeedCount. NOT when writersCount changes.
+  RECREATED only when newsFeedCount changes. NOT when writersCount changes.
   */
 
   return (
@@ -87,11 +88,11 @@ export default NewsMedia;
 2. Click 'Publish New Feed' button 
   Log: ChildComponent Rendered
 3. Click 'Fetch News Feed' Button
-  Log: News Feed Count: 63 & Writers Count: 4
+  Log: News Feed Count: 46 & Writers Count: 4
 4. Click 'Add New Writers' - 5 times 
   Log: (5 times) ChildComponent Rendered
 5. Click 'Fetch News Feed' Button
-  Log: News Feed Count: 63 Writers & Count: 4   (Notice writers count remains 4)
+  Log: News Feed Count: 46 & Writers Count: 4   (Notice writers count remains 4)
 
 Meaning, the handleClick function is memoized and supplied to the child component.
 Only when newsFeedCount changes the handleClick is recreated and 

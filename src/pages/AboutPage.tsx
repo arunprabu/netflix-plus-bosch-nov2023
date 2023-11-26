@@ -9,6 +9,7 @@ const AboutPage: React.FC<any> = (props) => {
       <h1>About Page</h1>
       <h2>Demo of Error Boundary</h2>
       {/* <p>{props.add()}</p> */}
+      <hr/>
       <h2>Demo of i18n and l10n</h2>
       <Localized />
 
