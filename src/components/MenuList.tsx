@@ -16,48 +16,8 @@ const MenuList: React.FC = () => {
         </Link>
       </li>
       <li className="nav-item">
-        <Link className="nav-link" to="/netflix">
-          Netflix App
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link" to="/users">
-          User Management App
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link" to="/timeline">
-          Timeline
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link" to="/products">
-          Products
-        </Link>
-      </li>
-      <li className="nav-item">
         <Link className="nav-link" to="/about">
           About
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link" to="/tree-view">
-          Tree View
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link" to="/contact-us">
-          Contact Us
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link" to="/spotify">
-          Spotify App
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link" to="/admin">
-          Admin
         </Link>
       </li>
       {!isAuthenticated ? (
@@ -67,11 +27,57 @@ const MenuList: React.FC = () => {
           </Link>
         </li>
       ) : (
-        <li className="nav-item">
-          <button className="btn btn-link text-white" onClick={() => logout()}>
-            Logout
-          </button>
-        </li>
+        <>
+          <li className="nav-item">
+            <Link className="nav-link" to="/netflix">
+              Netflix App
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/users">
+              User Management App
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/timeline">
+              Timeline
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/products">
+              Products
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link className="nav-link" to="/tree-view">
+              Tree View
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/contact-us">
+              Contact Us
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/spotify">
+              Spotify App
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/admin">
+              Admin
+            </Link>
+          </li>
+          <li className="nav-item">
+            <button
+              className="btn btn-link text-white"
+              onClick={() => logout()}
+            >
+              Logout
+            </button>
+          </li>
+        </>
       )}
     </ul>
   );

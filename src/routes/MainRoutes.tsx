@@ -26,12 +26,6 @@ const MainRoutes = () => {
     >
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/netflix" element={<NetflixPage />} />
-        <Route path="/users" element={<UsersPage />} />
-        <Route path="/users/add" element={<AddUser />} />
-        <Route path="/users/:id" element={<UserDetails />} />
-        <Route path="/timeline" element={<TimelinePage />} />
-        <Route path="/products" element={<ProductsPage />} />
 
         <Route path="/about" element={<AboutPage />} />
 
@@ -39,6 +33,12 @@ const MainRoutes = () => {
 
         {/* The following routes are protected. You need to login to access them */}
         <Route element={<ProtectedRoutes />}>
+          <Route path="/netflix" element={<NetflixPage />} />
+          <Route path="/users" element={<UsersPage />} />
+          <Route path="/users/add" element={<AddUser />} />
+          <Route path="/users/:id" element={<UserDetails />} />
+          <Route path="/timeline" element={<TimelinePage />} />
+          <Route path="/products" element={<ProductsPage />} />
           <Route path="/admin" element={<AdminPage />} />
           <Route path="/tree-view" element={<TreeViewPage />} />
           <Route path="/contact-us" element={<ContactUsPage />} />
