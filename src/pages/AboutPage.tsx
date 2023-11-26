@@ -8,6 +8,7 @@ const AboutPage: React.FC<any> = (props) => {
     <div>
       <h1>About Page</h1>
       <h2>Demo of Error Boundary</h2>
+      <p>[View the Code]: The next line is commented to prevent run time error and error bounday's fallback msg</p>
       {/* <p>{props.add()}</p> */}
       <hr/>
       <h2>Demo of i18n and l10n</h2>

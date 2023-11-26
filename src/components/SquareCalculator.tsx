@@ -1,14 +1,14 @@
 import React, { useState, useMemo } from "react";
 
 const SquareCalculator = () => {
-  const [inputValue, setInputValue] = useState(0);
+  const [inputValue, setInputValue] = useState(5);
   const [multiplier, setMultiplier] = useState(1);
 
   /* The useMemo hook is used to memoize the result of a computation. 
   It's useful when you want to optimize performance by caching the result of 
   an expensive operation and only recomputing it 
   when certain dependencies change. 
-  Examples: Graphs, Chartss Rendering, 
+  Examples: Graphs, Charts Rendering, 
   AG Grid -- Refer: https://www.ag-grid.com/react-data-grid/reactui/ 
   */
   const square = useMemo(() => {

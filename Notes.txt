@@ -256,7 +256,7 @@ Sunday
 ---
   
   Hooks (useMemo, useCallback)
-    useCallback() 
+    useCallback() [DONE]
       memoizes the entire fn 
 
     useMemo()
