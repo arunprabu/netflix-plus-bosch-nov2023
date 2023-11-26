@@ -20,6 +20,11 @@ const MenuList: React.FC = () => {
           About
         </Link>
       </li>
+      <li className="nav-item">
+        <Link className="nav-link" to="/contact-us">
+          Contact Us
+        </Link>
+      </li>
       {!isAuthenticated ? (
         <li className="nav-item">
           <Link className="nav-link" to="/auth/login">
@@ -52,11 +57,6 @@ const MenuList: React.FC = () => {
           <li className="nav-item">
             <Link className="nav-link" to="/tree-view">
               Tree View
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/contact-us">
-              Contact Us
             </Link>
           </li>
           <li className="nav-item">

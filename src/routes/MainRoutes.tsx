@@ -26,8 +26,8 @@ const MainRoutes = () => {
     >
       <Routes>
         <Route path="/" element={<HomePage />} />
-
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact-us" element={<ContactUsPage />} />
 
         <Route path="/auth/login" element={<LoginPage />} />
 
@@ -41,7 +41,6 @@ const MainRoutes = () => {
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/admin" element={<AdminPage />} />
           <Route path="/tree-view" element={<TreeViewPage />} />
-          <Route path="/contact-us" element={<ContactUsPage />} />
           <Route path="/spotify" element={<SpotifyPage />} />
         </Route>
       </Routes>
