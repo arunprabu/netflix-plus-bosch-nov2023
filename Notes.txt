@@ -254,15 +254,6 @@ Authorization [DONE]
 
 Sunday
 ---
-  
-  Hooks (useMemo, useCallback)
-    useCallback() [DONE]
-      memoizes the entire fn 
-
-    useMemo()
-      memoizes the returned value
-
-
 
   Case Study #5: tree view
   case study #6: timeline 
@@ -275,3 +266,14 @@ Sunday
 
   Redux - Toolkit (2 to 5.45pm)
  
+
+
+ =====
+ Parameters to choose third party packages?
+ ------
+  * does the npm package fit your requirements?
+  * is it having good community and number of downloads?
+  * check license?
+  * issues count should be minimal
+  * has it been updated in the last 6 months or 1 year? 
+

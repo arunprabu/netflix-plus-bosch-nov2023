@@ -1,5 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
-import "./App.css";
+import "@progress/kendo-theme-default/dist/all.css";
+import "./App.css"; // app-wide styles
 import Footer from "./layouts/Footer";
 import Header from "./layouts/Header";
 
