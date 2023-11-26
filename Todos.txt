@@ -20,7 +20,8 @@
 14. avoid code duplicate in MenuList.tsx by having an array of urls and menu items 
 15. Create RecommendedShow component and use it inside RecommendedShowList component. From the child comp execute 
     handleManageWatchlist. 
-16. 
+16. Setup environments such as dev, qa, staging, prod with env files 
+    
 
 
 

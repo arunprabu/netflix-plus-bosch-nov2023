@@ -50,6 +50,12 @@ Webapps
         4. bandwidth consumption was less 
         5. less expensive
 
+      Disadv
+      -----
+        1. NOT Search Engine Friendly (Can be fixed with SSR in React / Next.JS)
+        2. Initial Loading will take longer (can be fixed with Lazy loading)
+        
+
 
 --------
 Single Page Apps (SPA)
@@ -255,19 +261,20 @@ Authorization [DONE]
 Sunday
 ---
 
-  Case Study #5: tree view
   case study #6: timeline 
-
-
-
-  HOC
+    Refer: https://primereact.org/timeline/
+ 
   build and deployment 
-  lazy loading 
+    * remove all console logs
+    * no console errors 
+    * no console warnings 
+    * check whether all pages / urls working properly
+    * check for run time errors 
+    * integrate logger tools like logrocket 
+    then, try npm run build 
 
   Redux - Toolkit (2 to 5.45pm)
  
-
-
  =====
  Parameters to choose third party packages?
  ------
@@ -277,3 +284,10 @@ Sunday
   * issues count should be minimal
   * has it been updated in the last 6 months or 1 year? 
 
+Notes to Trainer 
+----
+  1. Create HOC and push into Github Later 
+  2. Timeline Re-rendering issue upon filtering (may not be fixable)
+      alternate option may be https://primereact.org/timeline/
+
+  
