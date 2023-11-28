@@ -232,7 +232,7 @@ Cross Component Communication
 
   3. Any to Any Component Communication 
       3.1 Using React Context API [DONE]
-      3.2 Using Redux / Redux-Toolkit / Flex / MobX / Zustand / Recoil / Jotai
+      3.2 Using Redux-Toolkit / Redux / Zustand/ MobX / Recoil / Jotai / Flux (outdated)
 
 =====
 Internationalization (i18n)
